@@ -6,6 +6,7 @@ function PostList() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  //C: I see that you have COMPLETELY side-stepped the use of Redux RTK Queries by using fetch. this does work as expected but we are expecting this to be done the way that was taught using RTK
   useEffect(() => {
     fetch("https://strangers-things.herokuapp.com/api/2209-FTB-ET-WEB-FT/posts")
       .then((response) => response.json())
