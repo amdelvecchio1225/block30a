@@ -12,7 +12,7 @@ function App() {
       api already ends with posts so do you really need to add it for your
       second route here? */}
       <Routes>
-        <Route exact path="/*" component={PostList} />
+        <Route exact path="/" component={PostList} />
         <Route path="/posts/:postId" component={PostDetail} />
       </Routes>
     </>
